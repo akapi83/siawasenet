@@ -1,0 +1,155 @@
+@charset "UTF-8";
+html,body,h1,h2,h3,ul,li,p,dl,dt,dd {
+padding: 0;
+margin: 0;
+line-height: 1.0;
+}
+ul {
+list-style: none;
+}
+a {
+text-decoration: none;
+color:inherit;
+}
+
+img {
+width:100%;
+vertical-align: bottom;
+}
+
+p,li,h1,h2 {
+    line-height: 1.5;
+    color: #7b490f;
+}
+
+
+
+header {
+    width: 100%;
+}
+
+.logo {
+    text-align: center;
+   
+}
+
+.logo h1 {
+    padding: 20px;
+    background: #f71060;
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+}
+
+.g-nav {
+    text-align: center;
+
+}
+
+.g-nav ul {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+.g-nav ul li a {
+    display: block;
+     margin: 10px 0;
+    padding: 10px 0;
+    background: #ffebc4;
+    font-weight: bold
+}
+
+main {
+    margin: 40px 10px 10px;
+}
+
+.about {
+    border-bottom: solid 2px #bf7218;
+    padding-bottom: 20px;
+}
+
+.about h1{
+    font-size: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+.shopinfo {
+    margin: 20px auto 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cafeimg {
+    width: 50%;
+    margin: 5px;
+}
+
+.cafe-concept {
+    width: 50%;
+}
+.cafe-concept h2 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    background: #f71060;
+}
+
+footer p {
+    padding: 4vh 0;
+    font-size: 1em;
+    color: #fff;
+}
+
+@media screen and (min-width:480px) {
+    
+    header {
+        display: flex;
+        justify-content:space-around;
+        background: #f71060;
+       
+        
+    }
+    .logo {
+        width: 40%;
+        text-align: center;
+    }
+    
+    .logo h1 {
+        padding: 10px;
+        font-size: 1.5em;
+        background: #d4770b;
+        
+    }
+    
+    .logo h1 span {
+        color: #ffebc4;
+    }
+    
+    nav {
+        width: 50%;
+        margin: 5px 0px 0px;
+  
+    }
+    .g-nav ul {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    
+    .g-nav ul li {
+        width: calc(99%/3);
+        
+    }
+    
+    main {
+        width: 75%;
+        margin:  40px auto;
+    }
+    
+}

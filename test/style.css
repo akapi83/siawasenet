@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+body, h1, h2, h3, h4 ,h5, p {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    margin:0;
+    font-size: 16px;
+}
+
+
+.container {
+    margin: 15px;
+}
+.g-view {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    
+}
+
+.g-view iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}

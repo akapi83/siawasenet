@@ -1,0 +1,24 @@
+*,::before,::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.left-side {
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  background-color: lightblue;
+}
+
+.main-menu {
+  height: calc(100vh - 48px);
+  overflow-y: auto;
+}
+
+.right-side {
+  margin-left: 250px;
+}
+
+main {
+  height: 200vh;
+}

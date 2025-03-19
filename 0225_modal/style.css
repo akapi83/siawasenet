@@ -1,0 +1,109 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.modal.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal-content {
+  max-width: 650px;
+  background-color: #fff;
+  position: relative;
+}
+
+/* タブ切り替え */
+section.tab-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.tab-buttons {
+  margin-left: 2px;
+}
+.tab-btn {
+  border: none;
+  border-radius: 10px 10px 0 0;
+  padding: 5px 10px;
+  border-bottom: 2px solid #90009a;
+  margin-bottom: -2px;
+}
+
+.tab-btn.current {
+  background-color: #ffe6b8;
+  border-bottom: 2px solid #ffe6b8;
+  /* z-index: 2; */
+  position: relative;
+}
+.tab-btn.current::before {
+  content: "";
+  display: block;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background-color: #90009a;
+  border-radius: 12px 12px 0 0;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  z-index: -1;
+}
+
+.notice {
+  display: none;
+  background-color: #ffe6b8;
+  padding: 10px 20px;
+  border: 2px solid #90009a;
+}
+
+.notice.current {
+  display: block;
+}
+
+/* よくある質問 */
+.faq-wrap {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.faq dt {
+  padding: 10px;
+  border-bottom: 2px solid #f79090;
+}
+
+.faq dd {
+  display: none;
+  margin: 0;
+  /* max-height: 0; */
+  /* overflow: hidden; */
+  /* transition: 1s; */
+}
+
+/* .faq dd.current {
+  max-height: 300px;
+} */
+
+.faq dd > div {
+  background: #eefff0;
+  padding: 10px;
+}

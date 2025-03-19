@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>モーダルウィンドウ練習</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>モーダルウィンドウ</h1>
+  <button class="modal-open" data-target="modal-2">保湿クリーム</button>
+  <button class="modal-open" data-target="modal-1">香水</button>
+  <p>コンテンツが入っています。コンテンツが入っています。コンテンツが入っています。コンテンツが入っています。コンテンツが入っています。コンテンツが入っています。コンテンツが入っています。コンテンツが入っています。コンテンツが入っています。コンテンツが入っています。コンテンツが入っています。コンテンツが入っています。コンテンツが入っています。コンテンツが入っています。</p>
+
+  <section class="tab-wrap">
+    <div class="tab-buttons">
+      <button class="tab-btn current" data-tab="news">お知らせ</button>
+      <button class="tab-btn" data-tab="event">イベント</button>
+      <button class="tab-btn" data-tab="press">プレスリリース</button>
+    </div>
+
+    <div id="news" class="notice current">
+      <h2>お知らせ</h2>
+      <ul>
+        <li>2023-03-03 ひな祭り特別商品販売中</li>
+        <li>2023-03-03 ひな祭り特別商品販売中</li>
+        <li>2023-03-03 ひな祭り特別商品販売中</li>
+      </ul>
+    </div>
+    <div id="event" class="notice">
+      <h2>イベント</h2>
+      <ul>
+        <li>2023-02-14 バレンタインイベント♪</li>
+        <li>2023-02-14 バレンタインイベント♪</li>
+        <li>2023-02-14 バレンタインイベント♪</li>
+      </ul>
+    </div>
+    <div id="press" class="notice">
+      <h2>プレスリリース</h2>
+      <ul>
+        <li>2023-01-30 第14期決算報告</li>
+        <li>2023-01-30 第14期決算報告</li>
+        <li>2023-01-30 第14期決算報告</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>よくある質問</h2>
+    <div class="faq-wrap">
+      <dl class="faq">
+        <div>
+          <dt>Q. 入会するにはどうしたらいいですか？</dt>
+          <dd><div>A. メニューから「入会申し込み」をくりっくして、テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div></dd>
+        </div>
+        <div>
+          <dt>Q. 入会するにはどうしたらいいですか？</dt>
+          <dd><div>A. メニューから「入会申し込み」をくりっくして、テキストテキストテキストテキステキストテキストテキストテキステキストテキストテキストテキステキストテキストテキストテキステキストテキストテキストテキステキストテキストテキストテキステキストテキストテキストテキステキストテキストテキストテキス</div></dd>
+        </div>
+        <div>
+          <dt>Q. 入会するにはどうしたらいいですか？</dt>
+          <dd><div>A. メニューから「入会申し込み」をくりっくして、テキストテキストテキストテキステキストテキストテキストテキステキストテキストテキストテキステキストテキストテキストテキス○</div></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+
+  <div class="modal" id="modal-1">
+    <div class="modal-mask modal-close"></div>
+    <div class="modal-content">
+      <h2>モーダルの中身</h2>
+      <p>中身のテキストは文章で入ります。中身のテキストは文章で入ります。中身のテキストは文章で入ります。中身のテキストは文章で入ります。中身のテキストは文章で入ります。中身のテキストは文章で入ります。</p>
+      <button class="close-btn modal-close">閉じる</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-2">
+    <div class="modal-mask modal-close"></div>
+    <div class="modal-content">
+      <h2>別のモーダルですね。</h2>
+      <p>I am another one. Right?I am another one. Right?I am another one. Right?I am another one. Right?I am another one.
+        Right?I am another one. Right?</p>
+      <button class="close-btn modal-close">閉じる</button>
+    </div>
+  </div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

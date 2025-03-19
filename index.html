@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>赤嶺祥のポートフォリオ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width">
+    
+</head>
+<body>
+    <div class="header">
+    <h1>赤嶺祥　ポートフォリオ</h1>
+    </div>
+    
+    <div class="content">
+        <ul class="controls">
+            <li class="filter" data-filter="all">Show all</li>
+            <li class="filter" data-filter=".css">Only CSS</li>
+            <li class="filter" data-filter=".java">Javascript + JQuery</li>
+            <li class="filter" data-filter=".banner">Banner</li>
+        </ul>
+        
+        <ul class="container">
+            <li class="mix css"><a href="http://siawasenet.html.xdomain.jp/construction/index.html" target="_blank"><img src="img/takasho_css.jpg" alt="takasho"></a></li>
+            
+            <li class="mix css"><a href="http://siawasenet.html.xdomain.jp/cafe/index.html" target="_blank"><img src="img/cafe_css.jpg" alt="cafe"></a></li>
+            
+            <li class="mix css"><a href="http://siawasenet.html.xdomain.jp/mongolia/index.html" target="_blank"><img src="img/mongolia_css.jpg" alt="cafe"></a></li>
+            
+            <li class="mix java"><a href="http://siawasenet.html.xdomain.jp/daffy2/index.html" target="_blank"><img src="img/daffy2_css.jpg" alt="cafe"></a></li>
+            
+            <li class="mix css"><a href="http://siawasenet.html.xdomain.jp/cafe/index.html" target="_blank"><img src="img/cafe_css.jpg" alt="cafe"></a></li>
+            
+        </ul>
+        
+    
+       
+    
+    </div>
+    
+    <div class="footer">
+            <p>&copy; 赤嶺祥 ポートフォリオ2019</p>
+    </div>
+        
+    <p id="page-top"><a href="#wrap"><i class="fas fa-angle-up"></i></a></p>
+        
+        
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+ <script src="js/mixitup.min.js"></script>
+        
+    <script>
+ var containerEl = document.querySelector('.container');
+ var mixer = mixitup(containerEl);
+ 
+ $(function() {
+ var topBtn = $('#page-top');
+ //scroll 100 bolohoor buttom garch irne
+ $(window).scroll(function() {
+ if ($(this).scrollTop() > 100) {
+ topBtn.fadeIn();
+} else {
+topBtn.fadeOut();
+}
+ });
+ //scroll hiiheer deeshee uildel ugnu.
+ topBtn.on('click',function () {
+ $('body,html').animate({scrollTop:0}, 500);
+ return false;
+ });
+ });
+ 
+    </script>
+ 
+</body>
+</html>

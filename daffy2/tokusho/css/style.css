@@ -1,0 +1,149 @@
+@charset "UTF-8";
+html,body,h1,h2,h3,p,ul,li,dt,dd{
+margin: 0;
+padding: 0;
+line-height: 1.0;
+}
+ul {
+list-style: none;
+}
+img {
+vertical-align: bottom;
+width:100%;
+}
+a {
+text-decoration: none;
+color:inherit;
+}
+
+body {
+    background: url(../../img/background.jpg) repeat ;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+.hd-wrap {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#bg-video {
+
+    width: 100%;
+    
+}
+
+.hd-logo {
+        position: absolute;
+    top: 0;
+    left:35%;
+    width: 30%;
+    z-index: 2;
+    margin: 35vw auto 0vw;
+
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+
+nav ul li {
+    text-align: center;
+    width: calc(98%/3);
+    padding: 10px 0px;
+    background: #eb9633;
+    color: #fff;
+    border-radius: 10px;
+}
+
+nav ul li:hover {
+    background: #c6c6c6;
+    
+}
+
+nav ul li a {
+    display: block;
+   
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+main {
+    margin: 0 10px;
+}
+h1 {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.80);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.list-wrap {
+    background: rgba(255, 255, 255, 0.70);
+    
+}
+
+dl {
+    padding: 10px;
+}
+
+.list-wrap  dt {
+    color:#f76e26;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #f76e26;
+    margin-bottom: 15px;
+}
+
+.list-wrap dd {
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+footer {
+    background: #4b4b4b;
+    color: #fff;
+    padding: 20px 0px;
+}
+.footer-link {
+    display: flex;
+    justify-content: center;
+}
+.footer-link li {
+    padding: 5px;
+    border-left: solid 2px ;
+    margin-bottom: 10px;
+}
+
+footer p{
+    background: none;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (min-width:960px){
+    
+    header, main, footer {
+        max-width: 960px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    
+    .hd-logo {
+    position: absolute;
+    top: 0;
+    left:35%;
+    width: 30%;
+    z-index: 2;
+    margin: 335px auto 0vw;
+   
+}
+}

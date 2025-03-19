@@ -1,0 +1,155 @@
+@charset "UTF-8";
+html,body,h1,h2,h3,p,ul,li,dt,dd{
+margin: 0;
+padding: 0;
+line-height: 1.0;
+}
+ul {
+list-style: none;
+}
+img {
+vertical-align: bottom;
+width:100%;
+}
+a {
+text-decoration: none;
+color:inherit;
+}
+
+body {
+    background: url(../../img/background.jpg) repeat ;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+.hd-wrap {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#bg-video {
+
+    width: 100%;
+    
+}
+
+
+
+
+.hd-logo {
+    position: absolute;
+    top: 0;
+    left:35%;
+    width: 30%;
+    z-index: 2;
+    margin: 35vw auto 0vw;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+
+nav ul li {
+    text-align: center;
+    width: calc(98%/3);
+    padding: 10px 0px;
+    background: #06c12a;
+    color: #fff;
+    border-radius: 10px;
+}
+
+nav ul li:hover {
+    background: #c6c6c6;
+    
+}
+
+nav ul li a {
+    display: block;
+   
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+main {
+    margin: 20px 10px;
+}
+main h1 {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.80);
+    padding: 10px;
+    border-radius: 20px;
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+.mall-wrap {
+    margin: 20px auto;
+    
+}
+
+.mall-wrap a {
+    display: inline-block;
+    margin: 10px auto;
+    color: #06c12a;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+.mall-wrap a:hover{
+    color: #d119ca;
+    background: #c0f0f4;
+
+}
+
+.mall-wrap p {
+    line-height: 1.5;
+    padding: 10px;
+    background: rgba(245, 245, 245, 0.72);
+}
+
+footer {
+    background: #4b4b4b;
+    color: #fff;
+    padding: 20px 0px;
+}
+.footer-link {
+    display: flex;
+    justify-content: center;
+}
+.footer-link li {
+    padding: 5px;
+    border-left: solid 2px ;
+}
+
+footer p{
+    background: none;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 960px){
+
+    header, main, footer {
+        max-width: 960px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    
+    .hd-logo {
+    position: absolute;
+    top: 0;
+    left:35%;
+    width: 30%;
+    z-index: 2;
+    margin: 335px auto 0vw;
+ 
+}
+    
+}
+

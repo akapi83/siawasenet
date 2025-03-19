@@ -1,0 +1,246 @@
+@charset "UTF-8";
+html,body,h1,h2,h3,p,ul,li,dt,dd{
+margin: 0;
+padding: 0;
+line-height: 1.0;
+}
+ul {
+list-style: none;
+}
+img {
+vertical-align: bottom;
+width:100%;
+}
+a {
+text-decoration: none;
+color:inherit;
+}
+
+h1, h2, h3{
+    font-size: 20px;
+}
+
+body {
+    background: url(../img/background.jpg) repeat ;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+
+
+.hd-wrap {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#bg-video {
+
+    width: 100%;
+    
+}
+
+.hd-logo {
+    position: absolute;
+    top: 0;
+    left:35%;
+    width: 30%;
+    z-index: 2;
+    margin: 35vw auto 0vw;
+    
+    
+    
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+
+nav ul li {
+    text-align: center;
+    width: calc(98%/3);
+    padding: 10px 0px;
+    background: #f48e17;
+    color: #fff;
+    border-radius: 10px;
+}
+
+nav ul li:hover {
+    background: #c6c6c6;
+    
+}
+
+nav ul li a {
+    display: block;
+   
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+main h1 {
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.81);
+  padding: 10px;
+    border-radius: 30px;
+    
+}
+
+#odmaid {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 23px;
+    font-style:italic;
+    color: #ff0000;
+}
+
+
+
+.container {
+    margin: 20px 10px;
+    
+}
+
+
+.container h2,.container p {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.80);
+    line-height: 1.4;
+}
+
+#intro h2 {
+    border-left: solid 5px #ff0000;
+    margin-bottom: 10px;
+    
+}
+
+#voice h2 {
+     border-left: solid 5px #00ce20;
+    margin-bottom: 10px;
+}
+
+.customer p{
+   
+    margin: 0px 0px 10px;
+}
+.customer-profile p{
+    background: none;
+    padding: 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.female {
+    width: 70px;
+    height: 70px;
+    margin-right: 5px;
+}
+
+.customer {
+    display: flex;
+}
+
+#order h2 {
+    border-left: solid 5px #a600ce;
+    margin-bottom: 10px;
+}
+
+.accordion {
+    background: rgba(255, 255, 255, 0.80);
+}
+
+.menu {
+    display: block;
+    background: rgb(228, 159, 247);
+    padding: 10px;
+    border: solid 1px #fff;
+    
+}
+
+.menu:hover{
+    background: rgba(186, 185, 185, 0.78);
+    cursor: pointer;
+}
+
+.menu i{
+   color: #fff;
+    float: right;
+    padding-right: 10px;
+    
+}
+.child {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    
+}
+.handmade-wrap {
+    display: flex;
+    justify-content: center;
+}
+.handmade-i {
+    width: 30%;
+    max-width: 150px;
+    margin: 5px auto;
+}
+.handmade-i img {
+    box-shadow: 2px 2px 3px;
+   
+}
+.accordion-panel {
+    display: none;
+}
+
+.child li {
+    line-height: 1.5;
+}
+
+.copy {
+    text-align: center;
+}
+
+footer {
+    background: #4b4b4b;
+    color: #fff;
+    padding: 20px 0px;
+}
+.footer-link {
+    display: flex;
+    justify-content: center;
+}
+.footer-link li {
+    padding: 5px;
+    border-left: solid 2px ;
+}
+
+footer p{
+    background: none;
+}
+
+
+@media screen and (min-width: 640px){
+
+    header, main, footer {
+        max-width: 960px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    
+}
+    
+
+@media screen and (min-width:960px){
+    .hd-logo {
+    position: absolute;
+    top: 0;
+    left:35%;
+    width: 30%;
+    z-index: 2;
+    margin: 335px auto 0vw;
+    
+   
+}
+    
+}

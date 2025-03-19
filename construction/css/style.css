@@ -1,0 +1,183 @@
+@charset "UTF-8";
+html,body,h1,h2,h3,ul,li,p,dl,dt,dd {
+    padding: 0;
+    margin: 0;
+    line-height: 1.0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+/*
+font-family: 'Yellowtail', cursive;
+font-family: 'Kosugi', sans-serif;
+*/
+
+body {
+    font-family: 'Kosugi', sans-serif;
+    font-size: 16px;
+}
+
+header {
+    width: 95%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-family: 'Kosugi', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #007dfa;
+    font-style: italic;
+    
+    text-shadow: 1px 1px #000;
+    margin: 30px auto 30px;
+}
+
+
+
+nav ul {
+   
+    font-size: 24px;
+    display: flex;
+   justify-content: space-around;
+}
+
+nav ul li {
+    width: calc(100%/4);
+}
+
+nav ul li a{
+    display: block;
+   width: 100%;
+    padding: 10px 0 10px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background: #59d5fa;
+}
+
+.g-nav {
+    border-left: solid 2px #acacac; 
+}
+
+nav {
+    padding-bottom: 20px;
+    border-bottom: solid 5px #007dfa;
+    margin-bottom: 30px;
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.top {
+    margin-bottom: 20px;
+}
+
+.top img{
+    margin-bottom: 30px;
+}
+
+.top h1 {
+   font-size: 24px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.top h1 span {
+    color: #007dfa;
+}
+
+.top p {
+    line-height: 1.5;
+}
+
+.box {
+    width: 80%;
+    margin: 0 auto 20px;
+    padding: 20px 10px 20px;
+    box-shadow: 0px 0px 5px;
+    border-radius: 5px;
+    
+}
+
+.buisness {
+   
+    padding: 10px;
+    border-left: solid 4px #0ba76b;
+}
+
+.box img {
+    margin: 20px auto;
+}
+
+
+.profile {
+    
+    padding: 10px;
+    border-left: solid 4px #2eaaf7;
+}
+
+
+.access {
+    
+    padding: 10px;
+    border-left: solid 4px #a3a3a3;
+}
+
+.gmap {
+    width: 100%;
+    height: 56.6%;
+    margin: 20px auto 20px;
+}
+
+.box ul {
+    list-style:disc;
+    padding-left: 20px;
+    
+}
+
+.box ul li {
+    line-height: 1.5;
+}
+
+.box p {
+    line-height: 1.5;
+}
+
+.naiyou dt{
+    float: left;
+    margin-bottom: 10px;
+}
+
+.naiyou dt::after {
+    content: "：";
+}
+.naiyou dd {
+    margin-bottom: 10px;
+    margin-left: 80px;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    background: #007dfa;
+}
+
+footer p {
+    color: #fff;
+    padding-top: calc(65px/2);
+}

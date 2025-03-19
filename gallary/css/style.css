@@ -1,0 +1,159 @@
+@charset "UTF-8";
+html,body,h1,h2,h3,p,ul,li,dt,dd{
+margin: 0;
+padding: 0;
+line-height: 1.0;
+}
+ul {
+list-style: none;
+}
+img {
+vertical-align: bottom;
+width:100%;
+}
+a {
+text-decoration: none;
+color:inherit;
+}
+
+body {
+    background: url(../../img/background.jpg) repeat ;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+.hd-wrap {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#bg-video {
+
+    width: 100%;
+    
+}
+
+.hd-logo {
+    position: absolute;
+    top: 0;
+    left:30%;
+    width: 40%;
+    z-index: 2;
+    margin: 18vw auto 0vw;
+    background: rgba(255, 255, 255, 0.70);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+
+nav ul li {
+    text-align: center;
+    width: calc(98%/3);
+    padding: 10px 0px;
+    background: #0a00ff;
+    color: #fff;
+    border-radius: 10px;
+}
+
+nav ul li:hover {
+    background: #c6c6c6;
+    
+}
+
+nav ul li a {
+    display: block;
+   
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+main {
+    margin: 0 10px 20px;
+}
+main h1 {
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    background: rgba(10, 0, 255, 0.70);
+  padding: 10px;
+    color: #fff;
+    border-radius: 30px;
+    
+}
+
+
+.gallary {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+
+.gallary li {
+    width: calc(95%/3);
+    margin: 5px 0px;
+}
+
+aside {
+    margin: 0 10px 20px;
+}
+
+aside h2{
+    background: rgba(255, 255, 255, 0.80);
+    padding: 10px;
+    border-left: solid 5px #0a00ff;
+    margin-bottom: 10px;
+    
+}
+.sns {
+    display: flex;
+    justify-content: space-around;
+}
+.sns li {
+    font-size: 60px;
+    color: #0a00ff;
+    text-align: center;
+}
+
+.sns li p {
+    font-size: 16px;
+    
+}
+
+footer {
+    background: #4b4b4b;
+    color: #fff;
+    padding: 20px 0px;
+}
+.footer-link {
+    display: flex;
+    justify-content: center;
+}
+.footer-link li {
+    padding: 5px;
+    border-left: solid 2px ;
+}
+
+footer p{
+    background: none;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 640px){
+
+    header, main, footer {
+        max-width: 960px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    
+    .gallary li {
+        width: calc(95%/4);
+    }
+    
+}
